@@ -43,6 +43,7 @@ header .wrapper-center h1{
 }
 
 header .wrapper-center img{
+    width: 15em;
     border-radius: 50%;
     border: 6px solid 	#46c3db;
     box-shadow: 0 28px 26px 1px rgba(0, 0, 0, .7);
