@@ -10,8 +10,9 @@ body{
 
 .pict{
     width: 100%;
-    
+    position: center;    
 }
+
 
 .top{
     background: url('image/bg.png') no-repeat;
@@ -24,6 +25,7 @@ body{
     position: relative;
     text-align: center;
 }
+
 
 header .wrapper-center{
     position: absolute;
@@ -55,10 +57,12 @@ header .wrapper-center ul{
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     margin-top: 25px;
-}
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1df));
+  }
 
 header .wrapper-center ul li a{
     margin-right: 15px;
@@ -69,10 +73,11 @@ header .wrapper-center ul li a{
     text-shadow: 0 4px 0px black;
     margin-bottom: 40px;
     padding-bottom: 10px;
+    
 }
 
 header .wrapper-center ul li a:hover{
-    border-bottom: 5px solid #e2f3f5;
+    border-bottom: 2px solid #e2f3f5;
 }
 
 .about-me{
@@ -155,7 +160,7 @@ header .wrapper-center ul li a:hover{
 .skill .wrapper-skill h5 {
     text-transform: uppercase;
     text-shadow: 0 2px 0px black;
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 7px;
 }
 
