@@ -1,0 +1,579 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+.pict{
+    width: 100%;
+    position: center;    
+}
+.pict1{
+  width: 100px;
+  position: center;    
+}
+
+.top{
+    
+    background-color: 	#E4DCCF;
+    background-blend-mode: multiply;
+    opacity: .8;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    text-align: center;
+}
+
+
+header .wrapper-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+header .wrapper-center h1{
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    /* text-shadow: 0 4px 0px #F0EBE3; */
+    margin-bottom: 20px;
+}
+
+header .wrapper-center img{
+    width: 15em;
+    border-radius: 50%;
+    border: 6px solid 	#000000;
+    box-shadow: 0 28px 26px 1px rgba(0, 0, 0, .7);
+    transition: transform .5s ease-out;
+}
+
+header .wrapper-center img:hover{
+    transform: scale(1.1);
+}
+
+header .wrapper-center ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* display: flex; */
+    justify-content: center;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1df));
+  }
+
+header .wrapper-center ul li a{
+    margin-right: 15px;
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    /* text-shadow: 0 4px 0px black; */
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    
+}
+
+header .wrapper-center ul li a:hover{
+    border-bottom: 2px solid #e2f3f5;
+}
+
+.about-me{
+    background: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 15px 10px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+}
+
+.about-me .wrapper h2{
+    /* text-shadow: 0 4px 0px black; */
+    font-size: 2,5rem;
+    text-transform: uppercase;
+    border-bottom: 4px solid black;
+    display: inline-block;
+    padding-bottom: 7px;
+    margin-bottom: 40px;
+}
+
+.about-me .wrapper p{
+    /* text-shadow: 0 2px 0px black; */
+    font-size: 18px;
+    line-height: 25px;
+    padding: 0 35px;
+    margin-bottom: 50px;
+}
+
+.about-me .wrapper a{
+    color: black;
+    background-color: #7D9D9C;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 15px;
+    padding: 10px 30px;
+    border: 5px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+}
+
+
+  .skill{
+    background: #E4DCCF;
+    color: #000000;
+    text-align: center;
+    padding: 15px 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.skill .wrapper{
+    width: 80%;
+}
+
+
+.skill .wrapper h2{
+    /* text-shadow: 0 4px 0px black; */
+    font-size: 2,5rem;
+    text-transform: uppercase;
+    border-bottom: 4px solid black;
+    display: inline-block;
+    padding-bottom: 7px;
+    margin-bottom: 40px;
+}
+
+
+.skill .wrapper-skill {
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.skill .wrapper-skill h5 {
+    text-transform: uppercase;
+    /* text-shadow: 0 2px 0px black; */
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.skill .wrapper-skill .background{
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background: white;
+}
+
+.skill .wrapper-skill .background .indicator{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    background: #7D9D9C;
+    z-index: 2;
+}
+
+.indicator.html{
+    width: 85%;
+}
+
+.indicator.css{
+    width: 85%;
+}
+
+.indicator.java{
+    width: 60%;
+}
+
+.indicator.c{
+    width: 60%;
+}
+
+.indicator.python{
+    width: 65%;
+}
+
+.indicator.indonesia{
+    width: 85%;
+}
+
+.indicator.inggris{
+    width: 70%;
+}
+
+.indicator.laravel{
+    width: 65%;
+}
+
+.projects{
+    background: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 15px 10px;
+    /* height: 100vh; */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+.projects h2{
+    /* text-shadow: 0 4px 0px black; */
+    font-size: 2,5rem;
+    text-transform: uppercase;
+    border-bottom: 4px solid black;
+    display: inline-block;
+    padding-bottom: 7px;
+    margin-bottom: 40px;
+}
+
+.projects .wrapper-projects{
+    display: grid;
+    grid-gap: 30px;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+} 
+
+.pictProject{
+  width: 100%;
+  
+}
+
+.wrapper-projects a {
+    text-decoration: none;
+    text-align: left;
+    color: black;
+    /* text-shadow: 0 2px 0 black; */
+    font-size: 20px;
+}
+
+/* experience */
+
+.pictexp{
+  width: 50%;
+}
+
+.cardexp{
+  background-color: #E4DCCF !important;
+  border: none;
+  box-shadow: none;
+}
+
+.hovercss{
+  font-display: none;
+}
+.experiences{
+  background: #E4DCCF;
+  color: #000000;
+  text-align: center;
+  padding: 15px 10px;
+  /* height: 100vh; */
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+
+.experiences .wrapper h2{
+  /* text-shadow: 0 4px 0px black; */
+  font-size: 2,5rem;
+  text-transform: uppercase;
+  border-bottom: 4px solid black;
+  display: inline-block;
+  padding-bottom: 7px;
+  margin-bottom: 40px;
+}
+
+.experiences-items{
+  padding: 10px;
+  text-align: center;
+}
+
+.experiences .wrapper .wrapper-experiences{
+  display: grid;
+  grid-gap: 30px;
+  width: 55%;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+} 
+
+.wrapper-experiences  a {
+  text-decoration: none;
+  text-align: left;
+  color: black;
+  /* text-shadow: 0 2px 0 black; */
+  font-size: 20px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .sosmedpict {
+    width: 25px;
+    height: 25px;
+  }
+
+footer{
+    background: white;
+    color: black;
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+
+
+/* Organization */
+
+/*
+!!!!
+This pen is being refactored
+!!!!
+*/
+
+/*
+=====
+DEPENDENCES
+=====
+*/
+
+/*
+styles to reset headings https://github.com/melnik909/r-title
+*/
+
+.r-title{
+    margin-top: var(--rTitleMarginTop, 0) !important;
+    margin-bottom: var(--rTitleMarginBottom, 0) !important;
+  }
+  
+  /* 
+  styles of typography  https://github.com/melnik909/css-typography
+  */
+  
+  p:not([class]){
+    line-height: var(--cssTypographyLineHeight, 1.78);
+    margin-top: var(--cssTypographyBasicMargin, 1em);
+    margin-bottom: 0;
+  }
+  
+  p:not([class]):first-child{
+    margin-top: 0;
+  }
+  
+  /*
+  text component
+  */
+  
+  .text{
+    display: var(--textDisplay, inline-flex);
+    font-size: var(--textFontSize, 1rem);  
+  }
+  
+  /*
+  time component
+  */
+  
+  /*
+  core styles
+  */
+  
+  .time{
+    display: var(--timeDisplay, inline-flex);
+  }
+  
+  /*
+  extensions
+  */
+  
+  .time__month{
+    margin-left: var(--timelineMounthMarginLeft, .25em);
+  }
+  
+  /*
+  skin
+  */
+  
+  .time{
+    padding: var(--timePadding, .25rem 1.25rem .25rem);
+    background-color: var(--timeBackgroundColor, #f0f0f0);
+  
+    font-size: var(--timeFontSize, .75rem);
+    font-weight: var(--timeFontWeight, 700);
+    text-transform: var(--timeTextTransform, uppercase);
+    color: var(--timeColor, currentColor);
+  }
+  
+  /*
+  card component
+  */
+  
+  /*
+  core styles
+  */
+  
+  .card{
+    padding: var(--timelineCardPadding, 1.5rem 1.5rem 1.25rem);
+  }
+  
+  .card__content{
+    margin-top: var(--cardContentMarginTop, .5rem);
+  }
+  
+  /*
+  skin
+  */
+  
+  .card{
+    border-radius: var(--timelineCardBorderRadius, 2px);
+    border-left: var(--timelineCardBorderLeftWidth, 3px) solid var(--timelineCardBorderLeftColor, var(--uiTimelineMainColor));
+    /* box-shadow: var(--timelineCardBoxShadow, 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24)); */
+    background-color: var(--timelineCardBackgroundColor, #fff);
+  }
+  
+  /*
+  extensions
+  */
+  
+  .card__title{
+    --rTitleMarginTop: var(--cardTitleMarginTop, 1rem);
+    font-size: var(--cardTitleFontSize, 1.25rem);
+  }
+  
+  /*
+  =====
+  CORE STYLES
+  =====
+  */
+  
+  .timeline{
+    display: var(--timelineDisplay, grid);
+    grid-row-gap: var(--timelineGroupsGap, 2rem);
+  }
+  
+  /*
+  1. If timeline__year isn't displaed the gap between it and timeline__cards isn't displayed too
+  */
+  
+  .timeline__year{
+    margin-bottom: 1.25rem; /* 1 */
+  }
+  
+  .timeline__cards{
+    display: var(--timeloneCardsDisplay, grid);
+    grid-row-gap: var(--timeloneCardsGap, 1.5rem);
+  }
+  
+  
+  /*
+  =====
+  SKIN
+  =====
+  */
+  
+  .timeline{
+    --uiTimelineMainColor: var(--timelineMainColor, #222);
+    --uiTimelineSecondaryColor: var(--timelineSecondaryColor, #fff);
+  
+    border-left: var(--timelineLineWidth, 3px) solid var(--timelineLineBackgroundColor, var(--uiTimelineMainColor));
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .timeline__year{
+    --timePadding: var(--timelineYearPadding, .5rem 1.5rem);
+    --timeColor: var(--uiTimelineSecondaryColor);
+    --timeBackgroundColor: var(--uiTimelineMainColor);
+    --timeFontWeight: var(--timelineYearFontWeight, 400);
+  }
+  
+  .timeline__card{
+    position: relative;
+    margin-left: var(--timelineCardLineGap, 1rem);
+  }
+  
+  /*
+  1. Stoping cut box shadow
+  */
+  
+  .timeline__cards{
+    overflow: hidden;
+    padding-top: .25rem; /* 1 */
+    padding-bottom: .25rem; /* 1 */
+  }
+  
+  .timeline__card::before{
+    content: "";
+    width: 100%;
+    height: var(--timelineCardLineWidth, 2px);
+    background-color: var(--timelineCardLineBackgroundColor, var(--uiTimelineMainColor));
+  
+    position: absolute;
+    top: var(--timelineCardLineTop, 1rem);
+    left: -50%;
+    z-index: -1;
+  }
+  
+  /*
+  =====
+  SETTINGS
+  =====
+  */
+  /**/
+  .timeline{
+    --timelineMainColor: #4557bb;
+  }
+  
+  /*
+  =====
+  DEMO
+  =====
+  */
+  
+  body{
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
+    color: #222;
+  
+    background-color: #f0f0f0;
+    margin: 0;
+    /* display: flex; */
+    flex-direction: column;
+  }
+  
+  p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  
+  p:last-child{
+    margin-bottom: 0;
+  }
+  
+  .page{
+    
+    max-width: 47rem;
+    padding: 5rem 2rem 3rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
